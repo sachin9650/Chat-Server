@@ -1,0 +1,39 @@
+<html>
+	<head>
+	<style>
+		.sidemenu
+		{
+			display:block;
+			float:left;
+			width:500px;
+			height:500px;
+			background-image:url("menu.png");
+		}
+	</style>
+	<script> 
+		window.onload = function() 
+		{
+			document.getElementById("textID").href="http://"+location.hostname+":9001"+"/TextChat.html";
+			document.getElementById("fileID").href="http://"+location.hostname+":9001"+"/FileSharing.html";
+			document.getElementById("audioID").href="http://"+location.hostname+":9001"+"/AudioConferencing.html";
+			document.getElementById("videoID").href="http://"+location.hostname+":9001"+"/VideoConferencing.html";
+			document.getElementById("textAndFileID").href="http://"+location.hostname+":9001"+"/TextChatAndFileSharing.html";
+			document.getElementById("audioAndFileID").href="http://"+location.hostname+":9001"+"/AudioConferencingAndFileSharing.html";
+			document.getElementById("videoAndFileID").href="http://"+location.hostname+":9001"+"/VideoConferencingAndFileSharing.html";
+		};
+	</script>
+	<body>
+		<div class="col-md-3 sidemenu">
+			<br /> <br /> <br /><br />
+			<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a target="_blank" href="" id="textID">Text Based Chat Server</a></li>
+			<li><a target="_blank" href="" id="fileID">File Based Chat Server</a></li>
+			<li><a target="_blank" href="" id="audioID">Live Audio Based Chat Server</a></li>
+			<li><a target="_blank" href="" id="videoID">Live Video Based Chat Server</a></li>
+			<li><a target="_blank" href="" id="textAndFileID">Text + File Based Chat Server</a></li>
+			<li><a target="_blank" href="" id="audioAndFileID">Live Audio + File Based Chat Server</a></li>
+			<li><a target="_blank" href="" id="videoAndFileID">Live Video + File Based Chat Server</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
